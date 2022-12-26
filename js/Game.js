@@ -12,7 +12,8 @@ class Game {
 
     this.playerMoving = false;
     this.leftKeyActive = false;
-    this.blast = false;
+    // ADICIONE O ATRIBUTO DA BATIDADA LEMBRANDO QUE ELE PRECISA SER INICIADO COM FALSE
+   
   }
 
   getState() {
@@ -294,7 +295,8 @@ class Game {
   }
 
   handlePlayerControls() {
-    if (!this.blast) {
+// ADICIONE O NOT JUNTAMENTE COM A BATIDA 
+    if () {
       if (keyIsDown(UP_ARROW)) {
         this.playerMoving = true;
         player.positionY += 10;
